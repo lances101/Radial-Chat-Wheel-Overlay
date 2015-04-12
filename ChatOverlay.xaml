@@ -1,0 +1,14 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ChatWheel.ChatOverlay"
+    Width="500" Height="500"
+    AllowsTransparency="True" Topmost="True" WindowStyle="None"
+    Background="Transparent"
+    Title="ChatOverlay">
+    <Canvas x:Name="chatWheelCanvas" Background="Transparent">
+        <Ellipse Visibility="Visible" x:Name="elpsChatWheel" Height="220" Canvas.Left="175" Stroke="#FF202125"
+                 StrokeThickness="35" Canvas.Top="175" Width="220" />
+
+    </Canvas>
+</Window>

@@ -1,0 +1,57 @@
+﻿<Window x:Class="ChatWheel.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:this="clr-namespace:ChatWheel"
+        Background="#333333" ResizeMode="NoResize"
+        Width="372" Height="390"
+        Title="ChatOverlay Configuration" KeyDown="MetroWindow_KeyDown">
+
+    <Grid>
+        <Label Foreground="White" Content="Hotkey:" HorizontalAlignment="Left" VerticalAlignment="Top"
+               Margin="0,11,0,0" />
+        <Label Foreground="White" Content="Petals amount" HorizontalAlignment="Left" VerticalAlignment="Top"
+               Margin="162,0,0,0" />
+        <Button x:Name="BtnHotkey" Content="Button" HorizontalAlignment="Left" Margin="55,10,0,0"
+                VerticalAlignment="Top" Width="98" Height="30" Click="BtnNewHotkey_Click" />
+        <Slider Foreground="White" x:Name="sliderQuantaty" HorizontalAlignment="Stretch" Margin="162,22,0,0"
+                VerticalAlignment="Top"
+                Minimum="4" Maximum="8" Value="4" TickFrequency="1" IsSnapToTickEnabled="True"
+                ValueChanged="Slider_ValueChanged" Height="25" />
+        <Label Foreground="White" Content="{Binding ElementName=sliderQuantaty, Path=Value}"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top" />
+        <Grid VerticalAlignment="Top" Margin="10,40,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label HorizontalContentAlignment="Center" Foreground="White" Grid.Column="0" Content="Displayed Phrase" />
+            <Label HorizontalAlignment="Center" Foreground="White" Grid.Column="2" Content="Sent Phrase" />
+        </Grid>
+        <ItemsControl x:Name="phrasesList" ItemsSource="{Binding ElementName=settings, Path=Phrases, Mode=TwoWay}"
+                      Margin="0,72,0,-1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10,0,10,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition Width="10" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Height="25" VerticalContentAlignment="Center" Grid.Column="0"
+                                 Text="{Binding ShortPhrase}" LostFocus="PhraseBox_OnLostFocus" />
+                        <TextBox Height="25" VerticalContentAlignment="Center" Grid.Column="2"
+                                 Text="{Binding FullPhrase}" LostFocus="PhraseBox_OnLostFocus" />
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+
+    </Grid>
+
+</Window>
