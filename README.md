@@ -1,5 +1,5 @@
 # Radial Chat Wheel Overlay
-A simple overlay chat wheel that can be used anywhere
+A simple WPF radial chat wheel overlay that can be used anywhere. 
 
 This overlay was made a temporal fix to the lack of a quick-chat function in Heroes of The Storm. 
 While the in-game pinging function gets a lot of stuff done, sometimes you need something more than a blunt "retreat". 
