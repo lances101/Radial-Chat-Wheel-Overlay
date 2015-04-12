@@ -16,6 +16,8 @@ There is a simple configuration utility built-in.
 
 ![](http://i.imgur.com/x0Oj6tt.png)
 
+## There is compiled version of it
+[Here](https://github.com/lances101/Radial-Chat-Wheel-Overlay/releases/download/1.0.0/RadialChatWheelOverlay_Release_1.0.0.zip)
 ## Credits
 
 [Colin Eberhardt, for his PiePiece control with data binding support](http://www.codeproject.com/Articles/28098/A-WPF-Pie-Chart-with-Data-Binding-Support) 
