@@ -1,4 +1,4 @@
-# Radial Chat Wheel Overlay
+# Radial Chat Wheel Overlay [[release]](https://github.com/lances101/Radial-Chat-Wheel-Overlay/releases)
 A simple WPF radial chat wheel overlay that can be used anywhere. 
 
 This overlay was made a temporal fix to the lack of a quick-chat function in Heroes of The Storm. 
