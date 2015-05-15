@@ -16,7 +16,7 @@ There is a simple configuration utility built-in.
 
 ![](http://i.imgur.com/x0Oj6tt.png)
 
-## There is compiled version of it
+## There is a compiled version of it
 [Here](https://github.com/lances101/Radial-Chat-Wheel-Overlay/releases/download/1.0.0/RadialChatWheelOverlay_Release_1.0.0.zip)
 ## Credits
 
